@@ -1,4 +1,4 @@
-# Hướng dẫn Test — Duly's House Booking System
+<img width="649" height="475" alt="image" src="https://github.com/user-attachments/assets/76947b0d-f931-4659-a769-48b1fc684961" /># Hướng dẫn Test — Duly's House Booking System
 
 ## 1. Khởi động hệ thống
 
@@ -45,111 +45,111 @@ npm run dev         # http://localhost:5173
 ## 3. Test Flow: Trang công khai (Public)
 
 ### 3.1 Trang chủ (`/`)
-- [ ] Hero section hiển thị đúng (ảnh, tiêu đề, form tìm kiếm)
-- [ ] Section "Homestay nổi bật" có 3 card với ảnh, giá, rating
-- [ ] Section "Điểm đến" hiển thị đúng
-- [ ] Section "Tại sao chọn chúng tôi" hiển thị đúng
-- [ ] Section "Đánh giá" (Testimonials) hiển thị đúng
-- [ ] Footer đầy đủ
-- [ ] Responsive: Thu nhỏ màn hình → hamburger menu xuất hiện
+- [✓] Hero section hiển thị đúng (ảnh, tiêu đề, form tìm kiếm)
+- [✓] Section "Homestay nổi bật" có 3 card với ảnh, giá, rating
+- [✓] Section "Điểm đến" hiển thị đúng
+- [✓] Section "Tại sao chọn chúng tôi" hiển thị đúng
+- [✓] Section "Đánh giá" (Testimonials) hiển thị đúng
+- [✓] Footer đầy đủ
+- [✓] Responsive: Thu nhỏ màn hình → hamburger menu xuất hiện
 
 ### 3.2 Tìm kiếm (`/search`)
-- [ ] Truy cập `/search` không có params → hiện danh sách tất cả homestay
-- [ ] Nhập ngày nhận/trả phòng + số khách → bấm "Tìm kiếm"
-- [ ] Kết quả nhóm theo homestay, hiển thị loại phòng + số phòng trống + giá
-- [ ] Bấm "Xem chi tiết" → điều hướng đến trang chi tiết homestay
-- [ ] Tìm ngày quá xa (không có phòng) → hiện empty state "Không tìm thấy phòng trống"
-- [ ] Card homestay có hover effect (shadow + translate lên)
-- [ ] Image placeholder gradient khi không có ảnh thumbnail
+- [✓] Truy cập `/search` không có params → hiện danh sách tất cả homestay
+- [✓] Nhập ngày nhận/trả phòng + số khách → bấm "Tìm kiếm"
+- [✓] Kết quả nhóm theo homestay, hiển thị loại phòng + số phòng trống + giá
+- [✓] Bấm "Xem chi tiết" → điều hướng đến trang chi tiết homestay
+- [✓] Tìm ngày quá xa (không có phòng) → hiện empty state "Không tìm thấy phòng trống"
+- [✓] Card homestay có hover effect (shadow + translate lên)
+- [✓] Image placeholder gradient khi không có ảnh thumbnail
 
 ### 3.3 Chi tiết Homestay (`/homestays/:slug`)
-- [ ] Hiển thị: ảnh hero (hoặc gradient placeholder), tên, địa chỉ, mô tả
-- [ ] Danh sách loại phòng: tên, giá/đêm, sức chứa tối đa, nút đặt phòng
-- [ ] Card loại phòng có hover effect
-- [ ] Section đánh giá (ReviewSection): hiển thị rating trung bình, danh sách đánh giá
-- [ ] Chọn ngày + số phòng → bấm "Đặt phòng" → chuyển sang trang booking
-- [ ] Chưa đăng nhập bấm "Đặt phòng" → redirect đến `/login`
+- [✓] Hiển thị: ảnh hero (hoặc gradient placeholder), tên, địa chỉ, mô tả
+- [✓] Danh sách loại phòng: tên, giá/đêm, sức chứa tối đa, nút đặt phòng
+- [✓] Card loại phòng có hover effect
+- [✓] Section đánh giá (ReviewSection): hiển thị rating trung bình, danh sách đánh giá
+- [✓] Chọn ngày + số phòng → bấm "Đặt phòng" → chuyển sang trang booking
+- [✓] Chưa đăng nhập bấm "Đặt phòng" → redirect đến `/login`
 
 ### 3.4 Đặt phòng (`/booking`) — cần đăng nhập
-- [ ] Form thông tin: Họ tên, SĐT, Email (tự điền từ profile), Ghi chú
-- [ ] Panel bên phải: tóm tắt đơn (homestay, loại phòng, ngày, số đêm, giá)
-- [ ] Tổng tiền hiển thị đúng format `500.000₫`
-- [ ] Bấm "Xác nhận đặt phòng" → loading → chuyển sang success page
-- [ ] Validate: không điền tên/SĐT → hiện lỗi validation
+- [✓] Form thông tin: Họ tên, SĐT, Email (tự điền từ profile), Ghi chú
+- [✓] Panel bên phải: tóm tắt đơn (homestay, loại phòng, ngày, số đêm, giá)
+- [✓] Tổng tiền hiển thị đúng format `500.000₫`
+- [✓] Bấm "Xác nhận đặt phòng" → loading → chuyển sang success page
+- [✓] Validate: không điền tên/SĐT → hiện lỗi validation
 
 ### 3.5 Đặt phòng thành công (`/booking/success`)
-- [ ] Icon check xanh + tiêu đề "Đặt phòng thành công!"
-- [ ] Hiển thị mã đặt phòng (format `BKxxxxxx`)
-- [ ] Trạng thái: badge "Chờ xác nhận" (có pulse animation)
-- [ ] Thông tin: homestay, loại phòng, ngày, tổng tiền
-- [ ] Nút "Xem đặt phòng của tôi" → `/my-bookings`
-- [ ] Nút "Về trang chủ" → `/`
+- [✓] Icon check xanh + tiêu đề "Đặt phòng thành công!"
+- [✓ ] Hiển thị mã đặt phòng (format `BKxxxxxx`)
+- [✓] Trạng thái: badge "Chờ xác nhận" (có pulse animation)
+- [✓] Thông tin: homestay, loại phòng, ngày, tổng tiền
+- [✓] Nút "Xem đặt phòng của tôi" → `/my-bookings`
+- [✓] Nút "Về trang chủ" → `/`
 
 ---
 
 ## 4. Test Flow: Đăng nhập / Đăng ký
 
 ### 4.1 Đăng nhập (`/login`)
-- [ ] Form email + password
-- [ ] Password toggle (bấm icon mắt để show/hide)
-- [ ] Đăng nhập đúng → redirect về trang trước đó
-- [ ] Đăng nhập sai → hiện lỗi "Email hoặc mật khẩu không đúng"
-- [ ] Nút quick-login: bấm "Admin" / "Owner" / "Staff" / "Guest" → đăng nhập nhanh
-- [ ] Đã đăng nhập truy cập `/login` → redirect về `/`
-- [ ] Link "Đăng ký" → `/register`
+- [✓] Form email + password
+- [✓] Password toggle (bấm icon mắt để show/hide)
+- [✓] Đăng nhập đúng → redirect về trang trước đó
+- [✓] Đăng nhập sai → hiện lỗi "Email hoặc mật khẩu không đúng"
+- [✓] Nút quick-login: bấm "Admin" / "Owner" / "Staff" / "Guest" → đăng nhập nhanh
+- [✓] Đã đăng nhập truy cập `/login` → redirect về `/`
+- [✓] Link "Đăng ký" → `/register`
 
 ### 4.2 Đăng ký (`/register`)
-- [ ] Form: Họ tên, Email, Mật khẩu, Xác nhận mật khẩu
-- [ ] Password toggle cho cả 2 field mật khẩu
-- [ ] Đăng ký thành công → tự động đăng nhập → redirect `/`
-- [ ] Email trùng → lỗi validation
-- [ ] Mật khẩu không khớp → lỗi validation
-- [ ] Đã đăng nhập truy cập `/register` → redirect về `/`
+- [✓] Form: Họ tên, Email, Mật khẩu, Xác nhận mật khẩu
+- [✓] Password toggle cho cả 2 field mật khẩu
+- [✓] Đăng ký thành công → tự động đăng nhập → redirect `/`
+- [✓] Email trùng → lỗi validation
+- [✓] Mật khẩu không khớp → lỗi validation
+- [✓] Đã đăng nhập truy cập `/register` → redirect về `/`
 
 ### 4.3 Đăng xuất
-- [ ] Bấm "Đăng xuất" trên header → xóa token → về trang chủ
-- [ ] Truy cập route protected (`/my-bookings`) → redirect `/login`
+- [✓] Bấm "Đăng xuất" trên header → xóa token → về trang chủ
+- [✓] Truy cập route protected (`/my-bookings`) → redirect `/login`
 
 ---
 
 ## 5. Test Flow: Dashboard khách hàng (`/my-bookings`)
 
 ### 5.1 Tab "Sắp tới"
-- [ ] Hiển thị đơn đặt phòng pending + confirmed
-- [ ] Card: mã đặt, homestay, ngày, loại phòng, tổng tiền, trạng thái
-- [ ] StatusBadge "Chờ xác nhận" có pulse animation (chấm vàng nhấp nháy)
-- [ ] Nút "Huỷ đặt phòng" → confirm dialog → huỷ thành công → badge "Đã huỷ"
+- [✓] Hiển thị đơn đặt phòng pending + confirmed
+- [✓] Card: mã đặt, homestay, ngày, loại phòng, tổng tiền, trạng thái
+- [✓] StatusBadge "Chờ xác nhận" có pulse animation (chấm vàng nhấp nháy)
+- [✓] Nút "Huỷ đặt phòng" → confirm dialog → huỷ thành công → badge "Đã huỷ"
 
 ### 5.2 Tab "Đã qua"
-- [ ] Hiển thị đơn checked_in, checked_out, cancelled
-- [ ] Đơn checked_out chưa đánh giá → nút "★ Đánh giá"
-- [ ] Bấm "★ Đánh giá" → modal: chọn sao (1-5) + viết comment → submit
-- [ ] Đánh giá thành công → nút đổi thành "✓ Đã đánh giá"
-- [ ] Đơn checked_out đã đánh giá → hiển thị "✓ Đã đánh giá" (không thể đánh giá lại)
+- [✓] Hiển thị đơn checked_in, checked_out, cancelled
+- [✓] Đơn checked_out chưa đánh giá → nút "★ Đánh giá"
+- [✓] Bấm "★ Đánh giá" → modal: chọn sao (1-5) + viết comment → submit
+- [✓] Đánh giá thành công → nút đổi thành "✓ Đã đánh giá"
+- [✓] Đơn checked_out đã đánh giá → hiển thị "✓ Đã đánh giá" (không thể đánh giá lại)
 
 ### 5.3 Tab "Hồ sơ"
-- [ ] Hiển thị thông tin: Họ tên, Email, SĐT
-- [ ] Bấm "Chỉnh sửa" → form edit → lưu thành công
-- [ ] Đổi mật khẩu: nhập mật khẩu mới + xác nhận → lưu → đăng nhập lại bằng mật khẩu mới
+- [✓] Hiển thị thông tin: Họ tên, Email, SĐT
+- [✓] Bấm "Chỉnh sửa" → form edit → lưu thành công
+- [✓] Đổi mật khẩu: nhập mật khẩu mới + xác nhận → lưu → đăng nhập lại bằng mật khẩu mới
 
 ---
 
 ## 6. Test Flow: Thông báo
 
 ### 6.1 NotificationBell (trên header)
-- [ ] Icon chuông hiển thị trên cả PublicLayout và AdminLayout
-- [ ] Badge số thông báo chưa đọc (nếu > 0)
-- [ ] Bấm chuông → dropdown danh sách thông báo
-- [ ] Bấm vào thông báo → đánh dấu đã đọc
-- [ ] Nút "Đánh dấu tất cả đã đọc"
-- [ ] Bấm ngoài dropdown → đóng
+- [✓] Icon chuông hiển thị trên cả PublicLayout và AdminLayout
+- [✓] Badge số thông báo chưa đọc (nếu > 0)
+- [✓ ] Bấm chuông → dropdown danh sách thông báo
+- [✓] Bấm vào thông báo → đánh dấu đã đọc
+- [✓] Nút "Đánh dấu tất cả đã đọc"
+- [✓] Bấm ngoài dropdown → đóng
 
 ### 6.2 Trang thông báo (`/notifications`)
-- [ ] Danh sách đầy đủ, phân trang
-- [ ] Thông báo chưa đọc có nền highlight (xanh nhạt)
-- [ ] Bấm vào → đánh dấu đã đọc
-- [ ] Nút "Đánh dấu tất cả đã đọc"
-- [ ] Tạo booking mới → kiểm tra admin/staff nhận thông báo
+- [✓] Danh sách đầy đủ, phân trang
+- [✓] Thông báo chưa đọc có nền highlight (xanh nhạt)
+- [✓] Bấm vào → đánh dấu đã đọc
+- [✓] Nút "Đánh dấu tất cả đã đọc"
+- [✓] Tạo booking mới → kiểm tra admin/staff nhận thông báo
 
 ---
 
@@ -158,11 +158,11 @@ npm run dev         # http://localhost:5173
 > Đăng nhập bằng `admin@dulyshouse.vn` hoặc `staff@dulyshouse.vn`
 
 ### 7.1 Sidebar responsive
-- [ ] Desktop (>=1024px): sidebar hiển thị cố định bên trái
-- [ ] Mobile (<1024px): sidebar ẩn, hiện hamburger button
-- [ ] Bấm hamburger → sidebar trượt ra với overlay
-- [ ] Bấm overlay hoặc nút X → đóng sidebar
-- [ ] Bấm link trong sidebar mobile → đóng sidebar + điều hướng
+- [✓] Desktop (>=1024px): sidebar hiển thị cố định bên trái
+- [✓] Mobile (<1024px): sidebar ẩn, hiện hamburger button
+- [✓] Bấm hamburger → sidebar trượt ra với overlay
+- [✓] Bấm overlay hoặc nút X → đóng sidebar
+- [✓] Bấm link trong sidebar mobile → đóng sidebar + điều hướng
 
 ### 7.2 Dashboard (`/admin`)
 - [ ] 4 stat cards: Tổng doanh thu, Tổng đặt phòng, Cơ sở hoạt động, Tổng khách hàng
